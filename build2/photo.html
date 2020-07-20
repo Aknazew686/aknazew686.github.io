@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link href="css/style.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+  <header class="page-header page-header--desktop">
+    <div class="container">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <svg class="page-header__logo-image page-header__logo-image--mobile" width="74" height="22" viewBox="0 0 74.426 22.859">
+              <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+            </svg>
+            <svg class="page-header__logo-image page-header__logo-image--tablet" width="146" height="40" viewBox="0 0 146.3 40.375">
+              <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+            </svg>
+            <svg class="page-header__logo-image page-header__logo-image--desktop" width="146" height="40" viewBox="0 0 146.3 40.375">
+              <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+            </svg>
+          </a>
+          <button class="toggle">Открыть меню</button>
+        </div>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list header-list">
+              <li class="header-list__item">
+                <a class="header-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link header-list__link--active">Фотографии</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link" href="https://htmlacademy.ru/intensive/adaptive ">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="page-main__wrapper page-main__wrapper--photo">
+      <div class="container">
+        <h1 class="page-main__heading">Фотографии пользователей</h1>
+      </div>
+      <div class="page-main__wrapper">
+        <div class="container">
+          <p class="page-main__text page-main__text--header">Взгляните на фотографии, которые выкладывают пользователи!
+            Видите, как не хватает
+            ваших?
+          </p>
+        </div>
+      </div>
+    </div>
+    <section class="gallery">
+      <h2 class="visually-hidden">Галерея картинок</h2>
+      <picture>
+        <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp, img/panorama-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp, img/panorama-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/panorama-mobile@1x.webp, img/panorama-mobile@2x.webp 2x">
+        <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+        <img class="gallery__panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорамная фотография навесного моста через каньен,с протекующей речкой внизу и зелеными деревьями">
+      </picture>
+      <div class="container">
+        <div class="gallery__wrapper">
+          <div class="gallery__wrapper-flex">
+            <p class="gallery__name">
+              Анна<span class="gallery__time"> (5 минут назад)</span>
+            </p>
+            <p class="gallery__text">
+              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте
+              свои вопросы!
+            </p>
+            <div class="gallery__flex">
+              <a class="gallery__button" href="#">Лайк</a>
+              <a class="gallery__like" href="#">Нравится: 215</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <div class="photo">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp, img/photo-car-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp, img/photo-car-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-car-mobile@1x.webp, img/photo-car-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография белого автомобиля на фоне темно-синей стены,с фотоаппаратом на переднем плане.">
+                </picture>
+              </a>
+              <div class="photo__wrapper">
+                <p class="photo__name">
+                  Левон<span class="photo__time"> (5 часов назад)</span>
+                </p>
+                <p class="photo__text">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <div class="photo__flex">
+                  <a class="photo__button" href="#">Лайк</a>
+                  <a class="photo__like" href="#">Нравится: 356</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="photo">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp, img/photo-drumset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp, img/photo-drumset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp, img/photo-drumset-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография барабанной установки.">
+                </picture>
+              </a>
+              <div class="photo__wrapper">
+                <p class="photo__name">
+                  Антон<span class="photo__time"> (12 часов назад)</span>
+                </p>
+                <p class="photo__text">
+                  Соседи будут рады!
+                </p>
+                <div class="photo__flex">
+                  <a class="photo__button" href="#">Лайк</a>
+                  <a class="photo__like" href="#">Нравится: 666</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="photo">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp, img/photo-window-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp, img/photo-window-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-window-mobile@1x.webp, img/photo-window-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография стеклянной крыши с синим небом и облаками над ней.">
+                </picture>
+              </a>
+              <div class="photo__wrapper">
+                <p class="photo__name">
+                  Борис<span class="photo__time"> (20 часов назад)</span>
+                </p>
+                <p class="photo__text">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+                <div class="photo__flex">
+                  <a class="photo__button" href="#">Лайк</a>
+                  <a class="photo__like" href="#">Нравится: 215</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="photo">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp, img/photo-fair-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp, img/photo-fair-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp, img/photo-fair-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография Кубанской ярморки с оранжевым навесом.">
+                </picture>
+              </a>
+              <div class="photo__wrapper">
+                <p class="photo__name">
+                  Сергей<span class="photo__time"> (25 часов назад)</span>
+                </p>
+                <p class="photo__text">
+                  Самая кубанcкая в мире!
+                </p>
+                <div class="photo__flex photo__flex--sergey">
+                  <a class="photo__button" href="#">Лайк</a>
+                  <a class="photo__like" href="#">Нравится: 4</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="photo">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp, img/photo-pov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp, img/photo-pov-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp, img/photo-pov-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография холма горы с растениями и ногами фоторгафа сидящего на камнях.">
+                </picture>
+              </a>
+              <div class="photo__wrapper">
+                <p class="photo__name">
+                  Максим<span class="photo__time"> (40 часов назад)</span>
+                </p>
+                <p class="photo__text">
+                  Где снег-то?
+                </p>
+                <div class="photo__flex">
+                  <a class="photo__button" href="#">Лайк</a>
+                  <a class="photo__like" href="#">Нравится: 150</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="photo">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp, img/photo-wing-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp, img/photo-wing-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp, img/photo-wing-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография крыла самолоте на фоне горизонта и солнца.">
+                </picture>
+              </a>
+              <div class="photo__wrapper">
+                <p class="photo__name">
+                  Надежда<span class="photo__time"> (45 часов назад)</span>
+                </p>
+                <p class="photo__text">
+                  Всем GM и взаимные лайки!
+                </p>
+                <div class="photo__flex photo__flex--nadeshda">
+                  <a class="photo__button" href="#">Лайк</a>
+                  <a class="photo__like photo__like--nadeshda" href="#">Нравится: 2560</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <p class="page-main__text page-main__text--footer">Затмите их&nbsp;всех! <br> Выкладывайте все, что накопилось
+          в телефоне!</p>
+      </div>
+      <div class="page-main__wrapper page-main__wrapper--gray">
+        <div class="container">
+          <form class="editing" method="get">
+            <div class="editing__wrapper">
+              <h2 class="visually-hidden">Редактор фотографий</h2>
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp, img/photo-road-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp, img/photo-road-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-road-mobile@1x.webp, img/photo-road-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+                <img class="editing__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фотография ледяной дороги зимой, с голыми кустарниками на обочине.">
+              </picture>
+              <div class="editing__wrapper-flex">
+                <div class="editing__wrapper-controls">
+                  <div class="editing__flex">
+                    <svg class="editing__editor-crop" width="48" height="48" viewBox="0 0 48 48">
+                      <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
+                    </svg>
+                    <div class="editing__controls-all">
+                      <input class="editing__input" type="range" name="crop">
+                      <div class="editing__toggle-crop"></div>
+                    </div>
+                  </div>
+                  <div class="editing__flex editing__flex--fill">
+                    <svg class="editing__editor-fill" width="48" height="48" viewBox="0 0 48 48">
+                      <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
+                    </svg>
+                    <div class="editing__controls-all">
+                      <input class="editing__input" type="range" name="fill">
+                      <div class="editing__toggle-fill"></div>
+                    </div>
+                  </div>
+                  <div class="editing__flex editing__flex--contrast">
+                    <svg class="editing__editor-contrast" width="31" height="31">
+                      <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
+                    </svg>
+                    <div class="editing__controls-all">
+                      <input class="editing__input" type="range" name="contrast">
+                      <div class="editing__toggle-contrast"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="editing__controls">
+                  <div class="editing__toggle"></div>
+                </div>
+                <div class="editing__wrapper-button">
+                  <button class="editing__button">Запостить</button>
+                  <button class="editing__button editing__button--disabled" type="reset">Отмена</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper page-footer__wrapper--photo">
+      <div class="container">
+        <div class="page-footer__flex">
+          <div class="logo-footer">
+            <a class="logo-footer__link" href="index.html">
+              <svg class="logo-footer__image logo-footer__image--mobile" width="146.3" height="40.375">
+                <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+              </svg>
+              <svg class="logo-footer__image logo-footer__image--desktop" width="146.3" height="40.375">
+                <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Твиттер</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademyru"><span class="visually-hidden">Ютуб</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="copyright__logo-image" width="26" height="34" viewBox="0 0 26.943 34.09">
+                <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
+</body>
+
+</html>
