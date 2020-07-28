@@ -1,6 +1,6 @@
 'use strict';
 
-var toggle = document.querySelector('.toggle');
+    var toggle = document.querySelector('.toggle');
     var logo = document.querySelector('.page-header__logo');
     var nav = document.querySelector('.main-nav');
     var header = document.querySelector('.page-header__wrapper');
@@ -38,15 +38,15 @@ var toggle = document.querySelector('.toggle');
           body.classList.remove('hidden');
         })
       }
-
-      for (let anchor of anchors) {
-        anchor.addEventListener('click', function (event) {
-          event.preventDefault();
-          var blockID = anchor.getAttribute('href')
-          document.querySelector('' + blockID).scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-          })
-        })
-      }
     });
+
+    for (let anchor of anchors) {
+      anchor.addEventListener('click', function (event) {
+        event.preventDefault();
+        var blockID = anchor.getAttribute('href')
+        document.querySelector('' + blockID).scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        })
+      })
+    }

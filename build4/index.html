@@ -53,13 +53,13 @@
               <li class="form__item">
                 <span class="fieldtext">
                   <label class="visually-hidden" for="name">Имя</label>
-                  <input class="fieldtext__input" type="text" name="first-name" placeholder="Введите Ваше Имя" id="name" required="">
+                  <input class="fieldtext__input" type="text" name="first-name" placeholder="Введите Ваше Имя" id="name" autocomplete="name" required="">
                 </span>
               </li>
               <li class="form__item">
                 <span class="fieldtext">
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input class="fieldtext__input" type="number" name="phone" placeholder="Введите Ваш номер телефона" id="phone" required="">
+                  <input class="fieldtext__input" type="tel" name="phone" autocomplete="tel" placeholder="Введите Ваш номер телефона" id="phone" required="">
                 </span>
               </li>
             </ul>
@@ -184,6 +184,8 @@
   </footer>
   <script src="js/main.js"></script>
   <script src="js/picturefill.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/mask.js"></script>
 </body>
 
 </html>
