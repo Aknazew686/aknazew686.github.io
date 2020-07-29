@@ -8,6 +8,10 @@
     var links = document.querySelectorAll('.header-list__item')
     var anchors = document.querySelectorAll('a[href*="#"]');
 
+    header.classList.remove('page-header__wrapper--no-js');
+    toggle.classList.remove('toggle--no-js');
+    nav.classList.remove('main-nav--no-js');
+
     toggle.addEventListener('click', function () {
       if (toggle.classList.contains('toggle--closed')) {
         toggle.classList.remove('toggle--closed');

@@ -11,14 +11,14 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
+    <div class="page-header__wrapper page-header__wrapper--no-js">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo page-header__logo--closed">
           <img src="img/logo.svg" width="67" height="20" alt="Логотип магазина 'Велосипеды'">
         </a>
-        <button class="toggle toggle--closed" type="button">Открыть меню</button>
+        <button class="toggle toggle--closed toggle--no-js" type="button">Открыть меню</button>
       </div>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--no-js">
         <ul class="main-nav__list header-list">
           <li class="header-list__item">
             <a class="header-list__link" href="#about">О нас</a>
@@ -162,7 +162,7 @@
         <source media="(min-width: 768px)" srcset="img/video-bg-tablet.png, img/video-bg-tablet@2x.png 2x">
         <img class="player__image" src="img/video-bg-mobile.png" srcset="img/video-bg-mobile@2x.png 2x" alt="Фотография велосипеда">
       </picture>
-      <a class="video__link" aria-label="навигация" href="#"></a>
+      <a class="player__link" aria-label="навигация" href="#"></a>
     </section>
   </main>
   <footer>
