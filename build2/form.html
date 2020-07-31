@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <header class="page-header page-header--desktop">
-    <div class="container">
+  <header class="page-header page-header--closed page-header--desktop">
+    <div class="container container--mobile">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper">
           <a class="page-header__logo" href="index.html">
@@ -24,9 +24,9 @@
               <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
             </svg>
           </a>
-          <button class="toggle">Открыть меню</button>
+          <button class="toggle toggle--closed">Открыть меню</button>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list header-list">
               <li class="header-list__item">
@@ -48,7 +48,7 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="page-main__wrapper page-main__wrapper--form">
+    <div class="page-main__wrapper page-main__wrapper--form page-main__wrapper--closed">
       <div class="container">
         <h1 class="page-main__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
@@ -70,13 +70,13 @@
                     <li class="filter__item">
                       <label class="fieldtext">
                         <span class="fieldtext__label">Фамилия:</span>
-                        <input class="fieldtext__input" type="text" name="last-name" placeholder="Укажите фамилию *">
+                        <input class="fieldtext__input" type="text" name="last-name" placeholder="Укажите фамилию *" required="">
                       </label>
                     </li>
                     <li class="filter__item">
                       <label class="fieldtext">
                         <span class="fieldtext__label">Имя:</span>
-                        <input class="fieldtext__input fieldtext__input--name" type="text" name="first-name" placeholder="Введите ваше имя *">
+                        <input class="fieldtext__input fieldtext__input--name" type="text" name="first-name" placeholder="Введите ваше имя *" required="">
                       </label>
                     </li>
                     <li class="filter__item">
@@ -147,13 +147,13 @@
                     <li class="filter__item">
                       <label class="fieldtext fieldtext--contacts fieldtext--phone">
                         <span class="fieldtext__label fieldtext__label--contacts">Номер телефона</span>
-                        <input class="fieldtext__input fieldtext__input--contacts" type="text" name="phone" placeholder="Номер, пожалуйста">
+                        <input class="fieldtext__input fieldtext__input--contacts" type="text" name="phone" placeholder="Номер, пожалуйста" id="phone" required="">
                       </label>
                     </li>
                     <li class="filter__item">
                       <label class="fieldtext fieldtext--contacts fieldtext--mail">
                         <span class="fieldtext__label fieldtext__label--contacts">Адрес почты</span>
-                        <input class="fieldtext__input fieldtext__input--contacts" type="text" name="email" placeholder="Введите почту *">
+                        <input class="fieldtext__input fieldtext__input--contacts" type="email" name="email" placeholder="Введите почту *" required="">
                       </label>
                     </li>
                   </ul>
@@ -268,8 +268,11 @@
       <button class="popup__button">закрыть окно</button>
     </div>
   </section>
+  <script src="js/main.js"></script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/svgxuse.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/mask.js"></script>
 </body>
 
 </html>

@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <header class="page-header page-header--desktop">
-    <div class="container">
+  <header class="page-header page-header--closed page-header--desktop">
+    <div class="container container--mobile">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper">
           <a class="page-header__logo" href="index.html">
@@ -24,9 +24,9 @@
               <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
             </svg>
           </a>
-          <button class="toggle">Открыть меню</button>
+          <button class="toggle toggle--closed">Открыть меню</button>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list header-list">
               <li class="header-list__item">
@@ -48,7 +48,7 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="page-main__wrapper page-main__wrapper--photo">
+    <div class="page-main__wrapper page-main__wrapper--photo page-main__wrapper--closed">
       <div class="container">
         <h1 class="page-main__heading">Фотографии пользователей</h1>
       </div>
@@ -348,6 +348,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/svgxuse.min.js"></script>
 </body>
