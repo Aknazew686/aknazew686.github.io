@@ -7,6 +7,12 @@
     var body = document.querySelector('body')
     var links = document.querySelectorAll('.header-list__item')
     var anchors = document.querySelectorAll('a[href*="#"]');
+    var form = document.querySelector('form');
+
+    form.addEventListener("submit", function (evt) {
+      evt.preventDefault();
+      form.reset();
+    });
 
     header.classList.remove('page-header__wrapper--no-js');
     toggle.classList.remove('toggle--no-js');
