@@ -164,6 +164,7 @@
         </article>
       </footer>
     </div>
+
     <section class="popup">
       <button class="close" type="button">close</button>
       <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -171,11 +172,11 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <p class="popup-name">
           <label class="your-name" for="name">Ваше имя:</label>
-          <input class="popup-name-input" id="name" type="text" name="name" placeholder="Имя Фамилия">
+          <input class="popup-name-input" id="name" type="text" name="name" placeholder="Имя Фамилия" required>
         </p>
         <p class="popup-email">
           <label class="your-email" for="email">Ваш e-mail:</label>
-          <input class="popup-email-input" id="email" type="email" name="email" placeholder="email@example.com">
+          <input class="popup-email-input" id="email" type="email" name="email" placeholder="email@example.com" required>
         </p>
         <p class="popup-message">
           <label class="your-message" for="message">Текст письма:</label>
@@ -184,6 +185,7 @@
         <button class="popup-submit" type="submit">Отправить</button>
       </form>
     </section>
+    <script src="js/main.js"></script>
   </main>
 </body>
 

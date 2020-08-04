@@ -75,6 +75,10 @@ img {
   color: #000000;
 }
 
+.header-menu a:hover {
+  color: #efc849;
+}
+
 .header-list {
   margin: 0;
   margin-top: 10px;
@@ -88,6 +92,10 @@ img {
 
 .header-list a {
   color: #000000;
+}
+
+.header-list a:hover {
+  color: #efc849;
 }
 
 .basket {
@@ -347,6 +355,10 @@ img {
   border-radius: 3px;
 }
 
+.button-web-sites:hover {
+  opacity: 0.5;
+}
+
 .button-web-sites a {
   color: #ffffff;
 }
@@ -361,6 +373,10 @@ img {
   border-radius: 3px;
 }
 
+.button-applications:hover {
+  opacity: 0.5;
+}
+
 .button-applications a {
   color: #ffffff;
 }
@@ -373,6 +389,10 @@ img {
 
   background-color: #efc84a;
   border-radius: 3px;
+}
+
+.button-presentations:hover {
+  opacity: 0.5;
 }
 
 .button-presentations a {
@@ -633,6 +653,10 @@ img {
   border-radius: 5px;
 }
 
+.adress-block-button:hover {
+  opacity: 0.5;
+}
+
 .map {
   position: relative;
 }
@@ -670,6 +694,10 @@ img {
 
   background-color: #e1e1e1;
   border-radius: 50px;
+}
+
+.social-icon:hover {
+  background-color: #efc84a;
 }
 
 .social-icon-vk::after {
@@ -1435,4 +1463,9 @@ img {
   border: none;
   cursor: pointer;
   opacity: 0.3;
+  outline: none;
+}
+
+.popup-show {
+  display: block;
 }
