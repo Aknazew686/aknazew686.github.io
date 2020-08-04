@@ -6,6 +6,12 @@ var pageHeaderWrapper = document.querySelector('.page-header__wrapper');
 var blueLogo = document.querySelector('.page-header__logo-image-blue--mobile');
 var whiteLogo = document.querySelector('.page-header__logo-image--mobile');
 var body = document.querySelector('body');
+var form = document.querySelector('form');
+
+form.addEventListener("submit", function (evt) {
+  evt.preventDefault();
+  form.reset();
+});
 
 toggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
