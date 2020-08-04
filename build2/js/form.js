@@ -10,7 +10,8 @@ var popupButtons = document.querySelectorAll('.popup__button')
 
 form.addEventListener("submit", function (evt) {
   evt.preventDefault();
-  popupSend.classList.add('popup-show')
+  popupSend.classList.add('popup-show');
+  form.reset();
 });
 
 for (let popupButton of popupButtons) {
