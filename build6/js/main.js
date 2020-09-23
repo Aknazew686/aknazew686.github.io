@@ -25,11 +25,10 @@
       var value = phone.value.split('').filter(function(item){
         return item !== "_" && item !== " " && item !== "(" && item !== ")" && item !== "+"
       })
-      console.log(value)
       if (value.length < 10 && value.length > 0) {
         phone.setCustomValidity('Должно быть введено 10 цифр номера ');
       }   else {
-       phone.setCustomValidity('');
+        phone.setCustomValidity('');
       }
     };
 
