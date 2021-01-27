@@ -784,16 +784,17 @@ img {
 }
 
 .popup {
-  position: absolute;
-  top: 1756px;
+  position: fixed;
+  top: 50%;
   left: 50%;
+  z-index: 100;
 
   display: none;
   width: 960px;
 
   background-color: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .popup::after {

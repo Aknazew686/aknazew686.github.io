@@ -185,7 +185,7 @@
           </ul>
         </section>
       </div>
-    </main>
+
   </div>
   <h2 class="visually-hidden">Карта</h2>
   <div class="map">
@@ -194,13 +194,14 @@
         <h3 class="visually-hidden">Общая информация</h3>
         <p class="adress-block-heading">NЁRDS DESIGN STUDIO</p>
         <p class="adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          <span class="phone">тел. +7 (812) 275-75-75</span></p>
+          <span class="phone">тел. +7 (812) 275-75-75</span>
+        </p>
         <a class="adress-block-button" href="#">Напишите нам</a>
       </section>
     </div>
     <iframe class="card-size"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037865308363!2d30.321773887300164!3d59.93871649386396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572515038831!5m2!1sru!2sru"
-      style="border:0;" allowfullscreen=""></iframe>
+      style="border: 0;" allowfullscreen=""></iframe>
   </div>
   <div class="container">
     <footer class="footer">
@@ -222,12 +223,12 @@
     <p class="popup-heading">Напишите нам</p>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p class="popup-name">
-        <label class="your-name" for="name">Ваше имя:</label>
-        <input class="popup-name-input" id="name" type="text" name="name" placeholder="Имя Фамилия">
+        <label class="your-name" for="first-name">Ваше имя:</label>
+        <input class="popup-name-input" id="first-name" type="text" name="first-name" placeholder="Имя Фамилия" autocomplete="name" required>
       </p>
       <p class="popup-email">
         <label class="your-email" for="email">Ваш e-mail:</label>
-        <input class="popup-email-input" id="email" type="email" name="email" placeholder="email@example.com">
+        <input class="popup-email-input" id="email" type="email" name="email" placeholder="email@example.com" required>
       </p>
       <p class="popup-message">
         <label class="your-message" for="message">Текст письма:</label>
@@ -236,6 +237,8 @@
       <button class="popup-submit" type="submit">Отправить</button>
     </form>
   </section>
+  <script src="js/main.js"></script>
+</main>
 </body>
 
 </html>
