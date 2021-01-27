@@ -7,6 +7,21 @@ var blueLogo = document.querySelector('.page-header__logo-image-blue--mobile');
 var whiteLogo = document.querySelector('.page-header__logo-image--mobile');
 var body = document.querySelector('body');
 var form = document.querySelector('form');
+var formButton = document.querySelector('.profile__button');
+var validationPhone = function () {
+  var value = phone.value.split('').filter(function(item){
+    return item !== "_" && item !== " " && item !== "(" && item !== ")" && item !== "+"
+  })
+  if (value.length < 11 && value.length > 0) {
+    phone.setCustomValidity('Должно быть введено 10 цифр номера ');
+  }   else {
+    phone.setCustomValidity('');
+  }
+};
+
+formButton.addEventListener('click', function () {
+  validationPhone();
+});
 
 form.addEventListener("submit", function (evt) {
   evt.preventDefault();
