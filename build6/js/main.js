@@ -18,7 +18,7 @@
     var body = document.querySelector('body');
     var phone = document.querySelector('.fieldtext__input--phone');
     var phonePopup = document.querySelector('.popup-fieldtext__input--phone');
-    var formm = document.querySelector('.form');
+    var form = document.querySelector('form');
     var formButon = document.querySelector('.form__button');
     var popupButon = document.querySelector('.popup-form__button');
 
@@ -60,10 +60,9 @@
       validationPhonePopup();
     });
 
-    form.addEventListener("submit", function () {
-      localStorage.setItem("name", popupInputName.value);
-      localStorage.setItem("phone", popupInputPhone.value);
-      localStorage.setItem("message", popupInputMessage.value);
+    form.addEventListener("submit", function (evt) {
+      evt.preventDefault();
+      form.reset();
     });
 
     siteListWrapper.addEventListener('click', function () {
