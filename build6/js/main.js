@@ -17,18 +17,31 @@
     var popupBackground = document.querySelector('.popup-background')
     var body = document.querySelector('body');
     var phone = document.querySelector('.fieldtext__input--phone');
+    var phonePopup = document.querySelector('.popup-fieldtext__input--phone');
     var formm = document.querySelector('.form');
     var formButon = document.querySelector('.form__button');
+    var popupButon = document.querySelector('.popup-form__button');
 
 
     var validationPhone = function () {
       var value = phone.value.split('').filter(function(item){
         return item !== "_" && item !== " " && item !== "(" && item !== ")" && item !== "+"
       })
-      if (value.length < 10 && value.length > 0) {
+      if (value.length < 11 && value.length > 0) {
         phone.setCustomValidity('Должно быть введено 10 цифр номера ');
       }   else {
         phone.setCustomValidity('');
+      }
+    };
+
+    var validationPhonePopup = function () {
+      var value = phonePopup.value.split('').filter(function(item){
+        return item !== "_" && item !== " " && item !== "(" && item !== ")" && item !== "+"
+      })
+      if (value.length < 11 && value.length > 0) {
+        phonePopup.setCustomValidity('Должно быть введено 10 цифр номера ');
+      }   else {
+        phonePopup.setCustomValidity('');
       }
     };
 
@@ -40,8 +53,11 @@
     });
 
     formButon.addEventListener('click', function () {
-      console.log(phone.value.length);
       validationPhone();
+    });
+
+    popupButon.addEventListener('click', function () {
+      validationPhonePopup();
     });
 
     form.addEventListener("submit", function () {

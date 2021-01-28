@@ -22,8 +22,6 @@ var validationPhone = function () {
   }
 };
 
-
-
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (event) {
     event.preventDefault();
