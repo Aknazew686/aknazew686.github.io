@@ -137,36 +137,46 @@
   <div class="wrapper">
     <!-- для внутренних страниц используйте "headerActiveLinkIndex": 0\1\2 -->
     <header class="header">
-      <div class="container">
-        <div class="header__wrapper">
-          <div class="header__logo-wrapper">
-            <a class="header__logo" aria-label="Переход на главную">
-              <img class="header__logo-image header__logo-image--desctop" src="img/svg/logo-header.svg" width="200" height="62">
-              <img class="header__logo-image header__logo-image--mobile" src="img/svg/logo-header-mobile.svg" width="130" height="40">
-            </a>
-            <button class="header__toggle header__toggle--closed" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"></button>
-          </div>
-          <nav class="main-nav">
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="main-nav__link " href="#">Оборудование</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link " href="#">Нестандартное оборудование</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link " href="#">Комплексные решения</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link " href="#">О нас</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link " href="contacts.html">Контакты</a>
-                </li>
-              </ul>
+      <div class="header__contact-wrapper">
+        <div class="container container--header">
+          <div class="header__wrapper">
+            <div class="header__logo-wrapper">
+              <a class="header__logo" aria-label="Переход на главную">
+                <img class="header__logo-image header__logo-image--desctop" src="img/svg/logo-header.svg" width="200" height="62">
+                <img class="header__logo-image header__logo-image--mobile" src="img/svg/logo-header-mobile.svg" width="130" height="40">
+              </a>
+              <button class="header__toggle header__toggle--closed" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"></button>
             </div>
-          </nav>
+            <nav class="main-nav">
+              <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a class="main-nav__link " href="#">Оборудование</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link " href="#">Нестандартное оборудование</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link " href="#">Комплексные решения</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link " href="#">О нас</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link " href="contacts.html">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <ul class="header__list">
+              <li class="header__item">
+                <span href="#" class="header__link header__link--phone">+7 (925) 443 22 00</span>
+              </li>
+              <li class="header__item">
+                <span href="#" class="header__link header__link--mail">info@complexengineering.ru</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -350,10 +360,10 @@
                 <p class="footer-info__text">График работы: пн-пт с 08:00 до 18:00</p>
               </li>
               <li class="footer-info__item">
-                <a href="tel:+79254432200" class="footer-info__text footer-info__text--link">+7 (925) 443 22 00</a>
+                <span class="footer-info__text footer-info__text--link">+7 (925) 443 22 00</span>
               </li>
               <li class="footer-info__item">
-                <a href="mailto:info@complexengineering.ru" class="footer-info__text footer-info__text--link">info@complexengineering.ru</a>
+                <span class="footer-info__text footer-info__text--link">info@complexengineering.ru</span>
               </li>
             </ul>
           </div>
