@@ -781,21 +781,15 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-left: 1px solid #e0e0e0;
 }
 
 .main-nav__item {
   padding-right: 22px;
   margin-right: 22px;
-  border-right: 1px solid #E0E0E0;
 }
 
 .main-nav__item:last-child {
   margin-right: 0;
-}
-
-.main-nav__item:first-child {
-  padding-left: 22px;
 }
 
 .main-nav__link {
