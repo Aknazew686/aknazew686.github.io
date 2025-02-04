@@ -22,7 +22,7 @@
   <!-- используйте только для шрифта находящегося на первом экране -->
   <!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Complex Engineering — Технологии</title>
+  <title>Complex Engineering — Контакты</title>
 </head>
 
 <body>
@@ -158,26 +158,24 @@
                     <a class="main-nav__link " href="non-standard-equipment.html">Нестандартное оборудование</a>
                   </li>
                   <!--<li class="main-nav__item">
-                <a class="main-nav__link  is-active " >Комплексные решения</a>
+                <a class="main-nav__link "  href="#" >Комплексные решения</a>
               </li>-->
                   <li class="main-nav__item">
                     <a class="main-nav__link " href="company.html">О нас</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link " href="contacts.html">Контакты</a>
+                    <a class="main-nav__link  is-active ">Контакты</a>
                   </li>
                 </ul>
               </div>
             </nav>
             <ul class="header__list">
               <li class="header__item">
-                <span class="header__link">8 (800) 550 01 30</span>
-              </li>
-              <li class="header__item">
-                <span class="header__link">8 (925) 443 22 00</span>
-              </li>
-              <li class="header__item">
                 <span class="header__link">info@complexengineering.ru</span>
+              </li>
+              <li class="header__item">
+                <span class="header__link">8 (800) 550 01 30</span>
+                <span class="header__link">8 (925) 443 22 00</span>
               </li>
             </ul>
           </div>
@@ -185,19 +183,33 @@
       </div>
     </header>
     <main>
-      <section class="technologies">
+      <section class="contacts">
         <div class="container">
-          <picture>
-            <source type="image/webp" srcset="img/content/technologies.webp 1x, img/content/technologies@2x.webp 2x">
-            <img class="technologies__img" src="img/content/technologies.jpg" srcset="img/content/technologies@2x.jpg 2x" alt="Фотография работающего человека перед мониторами">
-          </picture>
-          <h1 class="page-heading">Технологии</h1>
-          <p class="page-text">ООО «Комплекс Инжиниринг» создана в …..году в г.…… Это одна из ведущих компаний по промышленной автоматизации, которая специализируется на проектировании, разработке и производстве роботов, транспортеров, упаковщиков и прочих машин.</p>
-          <p class="page-text">Мы предоставляем полные комплексные решения с использованием автоматизации и робототехники, уделяя особое внимание качественному контролю. Системы автоматизации создаются специально для нужд клиентов и оптимизированы для повышения эффективности и рационализации производственного процесса. </p>
-          <p class="page-text">Компания «Комплекс Инжиниринг» занимает одно из лидирующих мест по поставкам пищевого оборудования, конвейерных систем и комплектующих промышленного производства, так как обладает большим опытом проектирования, производства и обслуживания основного и вспомогательного оборудования на заказ. Среди наших клиентов – крупные кондитерские и хлебопекарные предприятия, мясоперерабатывающие заводы, производители оборудования по всей России.
-          </p>
-          <p class="page-text">Компания «Комплекс Инжиниринг» работает с вами от идеи, проектирования, установки до ввода инженерного решения в эксплуатацию, обучения операторов и поддерживается отличным послепродажным обслуживанием.</p>
-          <p class="page-text">Наша команда гарантирует инновационный дизайн, оптимальные решения и повышение эффективности вашей работы.</p>
+          <div class="map"></div>
+          <h1 class="page-heading">Наши контакты</h1>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__link contacts__link--location">142800, Россия, Московская обл., г. Ступино, ул.Крылова, д 11.</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__link contacts__link--time">График работы: пн-пт с 08:00 до 18:00</p>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__link contacts__link--phone">8 (800) 550 01 30</span>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__link contacts__link--phone">8 (925) 443 22 00</span>
+            </li>
+            <!--<li class="contacts__item">
+        <a href="https://wa.me/79161540141" target="_blank" class="contacts__link contacts__link--whatsapp">+7 (925) 443 22 00</a>
+      </li>
+      <li class="contacts__item">
+        <a href="https://t.me/VladimirVolchek" target="_blank" class="contacts__link contacts__link--telegram">@Vladimir</a>
+      </li> -->
+            <li class="contacts__item">
+              <span class="contacts__link contacts__link--mail">info@complexengineering.ru</span>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -254,6 +266,7 @@
       </div>
     </footer>
   </div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=4c828e51-1f63-49b7-9043-302215e1bfd0&amp;lang=ru_RU"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

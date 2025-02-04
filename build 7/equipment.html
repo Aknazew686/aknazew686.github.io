@@ -22,7 +22,7 @@
   <!-- используйте только для шрифта находящегося на первом экране -->
   <!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Complex Engineering — Контакты</title>
+  <title>Complex Engineering — Оборудование</title>
 </head>
 
 <body>
@@ -152,7 +152,7 @@
               <div class="main-nav__wrapper">
                 <ul class="main-nav__list">
                   <li class="main-nav__item">
-                    <a class="main-nav__link " href="equipment.html">Оборудование</a>
+                    <a class="main-nav__link  is-active ">Оборудование</a>
                   </li>
                   <li class="main-nav__item">
                     <a class="main-nav__link " href="non-standard-equipment.html">Нестандартное оборудование</a>
@@ -164,20 +164,18 @@
                     <a class="main-nav__link " href="company.html">О нас</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link  is-active ">Контакты</a>
+                    <a class="main-nav__link " href="contacts.html">Контакты</a>
                   </li>
                 </ul>
               </div>
             </nav>
             <ul class="header__list">
               <li class="header__item">
-                <span class="header__link">8 (800) 550 01 30</span>
-              </li>
-              <li class="header__item">
-                <span class="header__link">8 (925) 443 22 00</span>
-              </li>
-              <li class="header__item">
                 <span class="header__link">info@complexengineering.ru</span>
+              </li>
+              <li class="header__item">
+                <span class="header__link">8 (800) 550 01 30</span>
+                <span class="header__link">8 (925) 443 22 00</span>
               </li>
             </ul>
           </div>
@@ -185,31 +183,80 @@
       </div>
     </header>
     <main>
-      <section class="contacts">
+      <section class="main-description">
         <div class="container">
-          <div class="map"></div>
-          <h1 class="page-heading">Наши контакты</h1>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <p class="contacts__link contacts__link--location">142800, Россия, Московская обл., г. Ступино, ул.Крылова, д 11.</p>
+          <h1 class="main-description__heading">технологическое оборудование</h1>
+          <p class="main-description__text main-description__text--equipment">
+            Разработка и производство технологического оборудования, роботизированных комплексов, упаковщиков и прочих машин.</p>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <h2 class="visually-hidden">Каталог</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a class="catalog__link" href="palletizer.html">
+                <div class="catalog-card">
+                  <div class="catalog-card__wrapper">
+                    <p class="catalog-card__heading">Паллетайзеры</p>
+                    <picture>
+                      <source type="image/webp" srcset="img/content/equipment.webp 1x, img/content/equipment@2x.webp 2x">
+                      <img class="catalog-card__img" src="img/content/equipment.jpg" srcset="img/content/equipment@2x.jpg 2x" alt="Картинка паллетайзера">
+                    </picture>
+                  </div>
+                  <p class="catalog-card__text">Оборудование предназначено для технологической автоматизации предприятия.
+                  </p>
+                  <a class="catalog-card__link" href="#">Подробнее</a>
+                </div>
+              </a>
             </li>
-            <li class="contacts__item">
-              <p class="contacts__link contacts__link--time">График работы: пн-пт с 08:00 до 18:00</p>
+            <li class="catalog__item">
+              <a class="catalog__link" href="palletizer.html">
+                <div class="catalog-card">
+                  <div class="catalog-card__wrapper">
+                    <p class="catalog-card__heading">Кейс пакеры</p>
+                    <picture>
+                      <source type="image/webp" srcset="img/content/equipment.webp 1x, img/content/equipment@2x.webp 2x">
+                      <img class="catalog-card__img" src="img/content/equipment.jpg" srcset="img/content/equipment@2x.jpg 2x" alt="Картинка паллетайзера">
+                    </picture>
+                  </div>
+                  <p class="catalog-card__text">Оборудование предназначено для технологической автоматизации предприятия.
+                  </p>
+                  <a class="catalog-card__link" href="#">Подробнее</a>
+                </div>
+              </a>
             </li>
-            <li class="contacts__item">
-              <span class="contacts__link contacts__link--phone">8 (800) 550 01 30</span>
+            <li class="catalog__item">
+              <a class="catalog__link" href="palletizer.html">
+                <div class="catalog-card">
+                  <div class="catalog-card__wrapper">
+                    <p class="catalog-card__heading">Формирователи коробов</p>
+                    <picture>
+                      <source type="image/webp" srcset="img/content/equipment.webp 1x, img/content/equipment@2x.webp 2x">
+                      <img class="catalog-card__img" src="img/content/equipment.jpg" srcset="img/content/equipment@2x.jpg 2x" alt="Картинка паллетайзера">
+                    </picture>
+                  </div>
+                  <p class="catalog-card__text">Оборудование предназначено для технологической автоматизации предприятия.
+                  </p>
+                  <a class="catalog-card__link" href="#">Подробнее</a>
+                </div>
+              </a>
             </li>
-            <li class="contacts__item">
-              <span class="contacts__link contacts__link--phone">8 (925) 443 22 00</span>
-            </li>
-            <!--<li class="contacts__item">
-        <a href="https://wa.me/79161540141" target="_blank" class="contacts__link contacts__link--whatsapp">+7 (925) 443 22 00</a>
-      </li>
-      <li class="contacts__item">
-        <a href="https://t.me/VladimirVolchek" target="_blank" class="contacts__link contacts__link--telegram">@Vladimir</a>
-      </li> -->
-            <li class="contacts__item">
-              <span class="contacts__link contacts__link--mail">info@complexengineering.ru</span>
+            <li class="catalog__item">
+              <a class="catalog__link" href="palletizer.html">
+                <div class="catalog-card">
+                  <div class="catalog-card__wrapper">
+                    <p class="catalog-card__heading">Конвеерное оборудование</p>
+                    <picture>
+                      <source type="image/webp" srcset="img/content/equipment.webp 1x, img/content/equipment@2x.webp 2x">
+                      <img class="catalog-card__img" src="img/content/equipment.jpg" srcset="img/content/equipment@2x.jpg 2x" alt="Картинка паллетайзера">
+                    </picture>
+                  </div>
+                  <p class="catalog-card__text">Оборудование предназначено для технологической автоматизации предприятия.
+                  </p>
+                  <a class="catalog-card__link" href="#">Подробнее</a>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -268,7 +315,6 @@
       </div>
     </footer>
   </div>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=4c828e51-1f63-49b7-9043-302215e1bfd0&amp;lang=ru_RU"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
